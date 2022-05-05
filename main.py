@@ -17,7 +17,7 @@ TGraph = Client(
 
 @TGraph.on_message(filters.command("start"))
 async def start(client, message):
-    await message.reply_text(f"<b>مرحبا {message.from_user.first_name}, [📍](https://telegra.ph/file/f885709c8201a2ba098e5.jpg)انا اسمي صانع تلجراف ميديا 🥳\n\nI'm A <u>انا بوت تحويل الميديا الى تلجراف.</u>\n\n🗑️ أرسل لي أي شيء متحركة ، صورة  &فيديو MP4 وسأحمله على Telegra.ph وأرسل لك رابطًا مرة أخرى اشترك🛎️ @EITHON @VFF35 @Attitude_Network\n\n🔰احب هذا البوت♥️.</b>", True)
+    await message.reply_text(f"<b>مرحبا {message.from_user.first_name}, [📍](https://telegra.ph/file/f885709c8201a2ba098e5.jpg)انا اسمي صانع تلجراف ميديا 🥳\n\n <u>انا بوت تحويل الميديا الى تلجراف.</u>\n\n🗑️ أرسل لي أي شيء متحركة ، صورة  &فيديو MP4 وسأحمله على Telegra.ph وأرسل لك رابطًا مرة أخرى اشترك🛎️ @EITHON @VFF35 \n\n🔰احب هذا البوت♥️.</b>", True)
     
 @TGraph.on_message(filters.photo)
 async def getimage(client, message):
